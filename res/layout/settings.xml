@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:text="@string/audio"
+        android:onClick="cbClick" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/checkBox1"
+        android:layout_marginTop="16dp"
+        android:text="@string/speed"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="5dp"
+        android:checkedButton="@+id/radio4">
+        
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/low"/>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medium"
+            android:layout_marginTop="5dp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/high"
+            android:layout_marginTop="5dp" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/very_high"
+            android:layout_marginTop="5dp" />
+        
+		<RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inherit"
+            android:layout_marginTop="5dp" />
+        
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/radioGroup1"
+        android:layout_marginTop="16dp"
+        android:text="@string/install_TTS"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="installTTS"
+        android:clickable="true" />
+
+</RelativeLayout>

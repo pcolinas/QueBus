@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:contentDescription="@string/instr">
+    
+    <pfc.quebus.elements.MyTextView
+        android:id="@+id/lineaTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/bottom_line"
+        android:gravity="center">
+    </pfc.quebus.elements.MyTextView>
+    
+    <pfc.quebus.elements.MyTextView
+        android:id="@+id/minutos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center">
+    </pfc.quebus.elements.MyTextView>
+    
+ 
+</RelativeLayout>
